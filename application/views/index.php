@@ -3,15 +3,10 @@
 <?php $this->load->view('common/header') ?>
 <?php $this->load->view('admin/header') ?>
 
-<div class="panel panel-default">
-	<div class="panel-body">
-	
-	<?php echo $mainContent; ?>
 
 
-	</div>
-	
+		<!-- <?php echo $mainContent; ?> -->
+		<?php $this->load->view($subview); ?>
 
-</div>
 
 <?php $this->load->view('common/footer') ?>
