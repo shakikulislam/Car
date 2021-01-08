@@ -53,5 +53,6 @@ $route['default_controller'] = 'admin';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['brand'] = 'brand/index';
+$route['brand'] = 'brand';
+$route['body'] = 'body';
 // $route['admin'] = 'brand';

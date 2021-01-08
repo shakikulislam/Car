@@ -29,30 +29,36 @@ class Brand extends CI_Controller {
 
 	}
 
+	public function get_single_brand()
+	{
+		$brandId=$this->input->post('brandId');
+		$brandName=$this->BrandM->get_single_brand($brandId);
+		echo json_encode($brandName);
+	}
+
+	public function update()
+	{
+		$brandId=$this->input->post('brandId');
+		$brandName=$this->input->post('brandName');
+		$this->BrandM->update($brandId, $brandName);
+	}
+
+	public function delete()
+	{
+		$brandId=$this->input->post('brandId');
+		$this->BrandM->delete($brandId);
+	}
+
 	public function InsertBrand() 
 	{
 		$array = array();
 		$array["name"] = $this->input->post("brand");
 
 		$result= $this->BrandM->InsertBrand($array);
+
 		echo json_encode($result);
 		redirect(base_url('brand'));
 	}
-
-	public function Update() 
-	{
-		$brandId = $this->input->post("BrandId");
-
-		$result= $this->BrandM->Update($brandId);
-		echo json_encode($result);
-	}
-
-	// public function get_brandById()
-	// {
-	// 	$id=$this->input->post("brandId");;
-	// 	$result=$this->BrandM->get_brandById($id);
-	// 	echo json_encode($result);
-	// }
 }
 
 ?>
