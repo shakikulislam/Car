@@ -55,4 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['brand'] = 'brand';
 $route['body'] = 'body';
+$route['fuel'] = 'fuel';
 // $route['admin'] = 'brand';

@@ -18,6 +18,7 @@
               <ul class="dropdown-menu">
                 <li><a href="<?php echo base_url('brand') ?>">Brand</a></li>
                 <li><a href="<?php echo base_url('body') ?>">Body Type</a></li>
+                <li><a href="<?php echo base_url('fuel') ?>">Fuel Type</a></li>
                 <li><a href="#">Page 1-2</a></li>
                 <li><a href="#">Page 1-3</a></li>
               </ul>
